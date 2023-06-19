@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="SabicApp.Views.MapPage"
+             xmlns:vm="clr-namespace:SabicApp.ViewModels"
+             Title="{Binding Title}">
+    
+
+    <StackLayout HeightRequest="600" BackgroundColor="AliceBlue">
+        <maps:Map x:Name="map"
+               IsShowingUser="True"
+               MoveToLastRegionOnLayoutChange="False">
+         <x:Arguments>
+             <maps:MapSpan>
+                 <x:Arguments>
+                     <maps:Position>
+                         <x:Arguments>
+                             <x:Double>26.9597709</x:Double>
+                             <x:Double>49.5687416</x:Double>
+                         </x:Arguments>
+                     </maps:Position>
+                     <x:Double>0.01</x:Double>
+                     <x:Double>0.01</x:Double>
+                 </x:Arguments>
+             </maps:MapSpan>
+         </x:Arguments>
+         <maps:Map.Pins>
+             <maps:Pin Label="Mecca"
+                       Address="The holy place for all Muslims"
+                       Type="Place">
+                 <maps:Pin.Position>
+                     <maps:Position>
+                         <x:Arguments>
+                             <x:Double>21.422510</x:Double>
+                             <x:Double>39.826168</x:Double>
+                         </x:Arguments>
+                     </maps:Position>
+                 </maps:Pin.Position>
+             </maps:Pin>
+             <maps:Pin Label="Riyadh"
+                       Address="The capital city of Saudi Arabia"
+                       Type="Place">
+                 <maps:Pin.Position>
+                     <maps:Position>
+                         <x:Arguments>
+                             <x:Double>24.774265</x:Double>
+                             <x:Double>46.738586</x:Double>
+                         </x:Arguments>
+                     </maps:Position>
+                 </maps:Pin.Position>
+             </maps:Pin>
+         </maps:Map.Pins>
+     </maps:Map>
+    </StackLayout>
+
+    
+
+</ContentPage>
+
+

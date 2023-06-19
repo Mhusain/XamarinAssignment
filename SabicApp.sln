@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1705.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SabicApp.iOS", "SabicApp\SabicApp.iOS\SabicApp.iOS.csproj", "{31BA699E-71C2-4514-9BBB-CF9569E1E723}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SabicApp", "SabicApp\SabicApp\SabicApp.shproj", "{FA71A5B4-8010-465A-A942-905FDD6C9F1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31BA699E-71C2-4514-9BBB-CF9569E1E723}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{31BA699E-71C2-4514-9BBB-CF9569E1E723}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{31BA699E-71C2-4514-9BBB-CF9569E1E723}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{31BA699E-71C2-4514-9BBB-CF9569E1E723}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{31BA699E-71C2-4514-9BBB-CF9569E1E723}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{31BA699E-71C2-4514-9BBB-CF9569E1E723}.Debug|iPhone.Build.0 = Debug|iPhone
+		{31BA699E-71C2-4514-9BBB-CF9569E1E723}.Release|iPhone.ActiveCfg = Release|iPhone
+		{31BA699E-71C2-4514-9BBB-CF9569E1E723}.Release|iPhone.Build.0 = Release|iPhone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E13DDAF-DFB5-405B-A8EE-A238E0D7F7B3}
+	EndGlobalSection
+EndGlobal

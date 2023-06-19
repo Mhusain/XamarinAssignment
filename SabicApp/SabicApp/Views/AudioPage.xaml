@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="SabicApp.Views.AudioPage"
+    xmlns:vm="clr-namespace:SabicApp.ViewModels"
+    Title="{Binding Title}">
+
+    <ContentPage.BindingContext>
+        <vm:AudioViewModel/>
+    </ContentPage.BindingContext>
+
+    <StackLayout>
+        <Button
+            Text="Start Recording"
+            Command="{Binding StartRecordingCommand}"
+            IsEnabled="{Binding IsNotRecording}" />
+
+        <Button
+            Text="Stop Recording"
+            Command="{Binding StopRecordingCommand}"
+            IsEnabled="{Binding IsRecording}" />
+
+        <Label
+            Text="{Binding AudioBase64}"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="CenterAndExpand" />
+    </StackLayout>
+</ContentPage>
+
